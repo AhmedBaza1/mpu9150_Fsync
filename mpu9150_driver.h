@@ -103,7 +103,7 @@ int mpu9150_read_sensor_data(mpu9150_data_t *data);
 int mpu9150_self_test(void);
 int mpu9150_reset(void);
 void mpu9150_close(void);
-uint32_t get_timestamp_ms(void);
+static uint32_t get_timestamp_ms(void);
 
 // Error handling
 const char* mpu9150_get_error_string(int error_code);
